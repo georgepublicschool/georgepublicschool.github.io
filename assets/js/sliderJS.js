@@ -5,8 +5,6 @@ var responsiveSlider = function() {
 	var slideList = document.getElementById("slideWrap");
 	var count = 1;
 	var items = slideList.querySelectorAll("li").length;
-	var prev = document.getElementById("prev");
-	var next = document.getElementById("next");
 
 	var wid = window.innerWidth;
 	var fact = 1;
@@ -43,54 +41,9 @@ var responsiveSlider = function() {
 		}
 	};
 
-	next.addEventListener("click", function() {
-		nextSlide();
-	});
-
-	prev.addEventListener("click", function() {
-		prevSlide();
-	});
-
-	setInterval(function(){nextSlide()}, 5000);
+	setInterval(function(){nextSlide()}, 3000);
 };
 
 window.onload = function() {
 	responsiveSlider();  
 }
-
-/*****************************	Tablinks	****************************************/
-//horizontal
-function openPage(pageName,elmnt) {
-	var i, tabcontent, tablinks;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	}
-	tablinks = document.getElementsByClassName("tablink");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].style.backgroundColor = "";
-	}
-	document.getElementById(pageName).style.display = "block";
-	elmnt.style.backgroundColor = "#aaa";
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-
-//vertical
-function openCity(evt, cityName) {
-	var i, tab2content, tab2links;
-	tab2content = document.getElementsByClassName("tab2content");
-	for (i = 0; i < tab2content.length; i++) {
-		tab2content[i].style.display = "none";
-	}
-	tab2links = document.getElementsByClassName("tab2links");
-	for (i = 0; i < tab2links.length; i++) {
-		tab2links[i].className = tab2links[i].className.replace(" active", "");
-	}
-	document.getElementById(cityName).style.display = "block";
-	evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen2").click();

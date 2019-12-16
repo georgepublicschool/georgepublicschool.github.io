@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Shubhangi Goyal">
+	<meta name="keywords" content="George Public School, Dehradoon, Dehradun, School, Uttarakhand">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" name="viewport">
+
+	<meta name="title" content="George Public School">
+	<meta name="description" content="Welcome to George Public School ~ The school with a difference">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://georgepublicschool.github.io/">
+	<meta property="og:site_name" content="George Public School">
+	<meta property="og:title" content="George Public School">
+	<meta property="og:description" content="Welcome to George Public School ~ The school with a difference">
+	<meta property="og:type" content="website">
+	<meta property="og:image" itemprop="image" content="https://georgepublicschool.github.io/assets/img/og.jpg">
+	<meta property="og:site_name" content="George Public School">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="https://georgepublicschool.github.io/">
+	<meta name="twitter:site_name" content="George Public School">
+	<meta name="twitter:title" content="George Public School">
+	<meta name="twitter:description" content="Welcome to George Public School ~ The school with a difference">
+	<meta name="twitter:type" content="website">
+	<meta name="twitter:image" itemprop="image" content="https://georgepublicschool.github.io/assets/img/og.jpg">
+	<meta name="twitter:image:alt" content="George Public School">
+
+	<title>WELCOME TO GEORGE PUBLIC SCHOOL</title>
+	<link rel="stylesheet" href="assets/css/typeB.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="icon" href="assets/img/logo.jpg">
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="headerr">
+	<div class="headerLeftCol">
+		<a href="#top"><img src="assets/img/logo.jpg" style="max-width:7vw;height:7vw;transition:0.5s ease" id="logo"></a>
+	</div>
+	<div class="headerRightCol" id="c">
+		<div class="headerMenu">
+			<a href="index.html">Home</a>
+			<a class="activeLink">About</a>
+			<a href="index.html#inf">Insfrastructure</a>
+			<a href="index.html#Gal">Gallery</a>
+			<a href="index.html#Contac">Contact</a>
+		</div>
+	</div>
+</div>
+
+<div class="headr">
+	<div class="progress-containr">
+		<div class="progress-br" id="myBar" style="background-color: #231d5e"></div>
+	</div>
+</div>
+
+	<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			var scrolled = (winScroll / height) * 100;
+			document.getElementById("myBar").style.width = scrolled + "%";
+			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				document.getElementById("logo").style.maxHeight = "3.8vw";
+				document.getElementById("logo").style.maxWidth = "3.8vw";
+				document.getElementById("c").style.display = "none";
+			}
+			else {
+				document.getElementById("logo").style.maxHeight = "7.6vw"
+				document.getElementById("logo").style.maxWidth = "7.6vw";
+				document.getElementById("c").style.display = "block";
+			}
+		}
+	</script>
+
+<div id="myNav" class="overlaMenu" style="background-color: #110d36">
+<div class="smallScreenHeader" style="background-color: #110d36"><span style="float:right" onclick="closeNav()">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
+	<div class="overlaMenu-content">
+		<a href="About.html">About</a>
+		<a href="index.html#inf">Infrastructure</a>
+		<a href="index.html#Gall">Gallery</a>
+		<a href="index.html#Contac">Contact</a>
+	</div>
+</div>
+<div class="smallScreenHeader" style="background-color: #110d36"><span style="float:right" onclick="openNav()">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
+<script>
+	function openNav()	{	document.getElementById("myNav").style.height = "100%"; document.getElementsByTagName('body')[0].style.overflowY = "hidden";	}
+	function closeNav()	{	document.getElementById("myNav").style.height = "0%"; document.getElementsByTagName('body')[0].style.overflowY = "initial";	}
+</script>
+<!-------------------------------------------------------------------------------------------------------------------->
+<div class="headerText animate" style="background-color:#110d36" id="top"><p>About</p></div>
+
+<div class="row animate">
+	<div class="column">
+		<div class="aboutContent">
+			<img src="assets/img/School.jpg" style="width:100%;height:100%;">
+			<p><b>George Public School</b> located in Uttarakhand Vidhayli Shiksha Parishad, Nimbu Wala, Garhi Cantt is a Co-Educational Secondary School institution affiliated to the Central Board of Secondary Education (CBSE) on Provisional basis since 2006. The school has been operating officially under the trust/society George Public School Shiksha Samiti.</p>
+			<p>If you’re looking for details in admission/application forms, fees, school timings, vacations/holidays schedule or facilities provided, kindly visit the relevant department of the school.</p>
+
+			<p>George Public School has expertise of George Education Institute at its disposal to prepare for all India entrance examination for <b>RIMC, MILITARY SCHOOL, SAINIK SCHOOL and NDA & NAVAL ACADEMY.</b>This school always make consige effort for the students towards importance of joining Defense forces which teaches Loyality, Integrity and  uprightness.This gives enough opportunity to become an Officer in Defense Forces.</p>
+		</div>
+	</div>
+</div>
+<div class="footer" style="background-color:#231d5e">
+	<div class="footerMap animate">
+		<div class="map-responsive">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.979099785575!2d78.01510691446842!3d30.351543881771594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d5fd05bf0365%3A0x5ba048125a62beb7!2sGeorge%20Public%20School!5e0!3m2!1sen!2sin!4v1576401056171!5m2!1sen!2sin" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> 
+		</div>
+	</div>
+	<div class="footerMenu animate">
+		<h3 style="font-weight:bold"><i class="fas fa-link" style="color:#231d5e"></i> Quick Links</h3>
+		<a href="index.html"><h4>HOME</h4></a>
+		<a><h4>ABOUT</h4></a>
+		<a href="index.html#Gall"><h4>GALLERY</h4></a>
+	</div>
+	<div class="footerFB animate">
+		<h3 style="font-weight:bold">George Public School</h3>
+		<h4><i class="fas fa-home" style="color:#231d5e"></i>Nimbuwala, Garhi Cantt, Dehradun</h4>
+		<h4><i class="fas fa-mobile-alt" style="color:#231d5e"></i>0135-2750750</h4>
+		<h4><i class="fas fa-envelope" style="color:#231d5e"></i>schoolgeorgepublic@gmail.com</h4>
+		
+	</div>
+</div>
+	<p id="copyRight" style="text-align: center; color: black;"><strong>©</strong>All Rights Reserved to <strong>Centre for Social Innovation</strong></p>
+</body>
+</html>
