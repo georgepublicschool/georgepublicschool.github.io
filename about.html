@@ -69,11 +69,13 @@
 				document.getElementById("logo").style.maxHeight = "3.8vw";
 				document.getElementById("logo").style.maxWidth = "3.8vw";
 				document.getElementById("c").style.display = "none";
+				document.getElementById("myBtn").style.display = "block";
 			}
 			else {
 				document.getElementById("logo").style.maxHeight = "7.6vw"
 				document.getElementById("logo").style.maxWidth = "7.6vw";
 				document.getElementById("c").style.display = "block";
+				document.getElementById("myBtn").style.display = "none";
 			}
 		}
 	</script>
@@ -93,19 +95,22 @@
 	function closeNav()	{	document.getElementById("myNav").style.height = "0%"; document.getElementsByTagName('body')[0].style.overflowY = "initial";	}
 </script>
 <!-------------------------------------------------------------------------------------------------------------------->
-<div class="headerText animate" style="background-color:#110d36" id="top"><p>About</p></div>
+<div class="headerText" style="background-color:#110d36" id="top"><p class="animate">About</p></div>
 
-<div class="row animate">
+<div class="row">
 	<div class="column">
 		<div class="aboutContent">
-			<img src="assets/img/School.jpg" style="width:100%;height:100%;">
-			<p><b>George Public School</b> located in Uttarakhand Vidhayli Shiksha Parishad, Nimbu Wala, Garhi Cantt is a Co-Educational Secondary School institution affiliated to the Central Board of Secondary Education (CBSE) on Provisional basis since 2006. The school has been operating officially under the trust/society George Public School Shiksha Samiti.</p>
-			<p>If you’re looking for details in admission/application forms, fees, school timings, vacations/holidays schedule or facilities provided, kindly visit the relevant department of the school.</p>
+			<img class="animate" src="assets/img/School.jpg" style="width:100%;height:100%;">
+			<p class="animate"><b>George Public School</b> located in Uttarakhand Vidhayli Shiksha Parishad, Nimbu Wala, Garhi Cantt is a Co-Educational Secondary School institution affiliated to the Central Board of Secondary Education (CBSE) on Provisional basis since 2006. The school has been operating officially under the trust/society George Public School Shiksha Samiti.</p>
+			<p class="animate">If you’re looking for details in admission/application forms, fees, school timings, vacations/holidays schedule or facilities provided, kindly visit the relevant department of the school.</p>
 
-			<p>George Public School has expertise of George Education Institute at its disposal to prepare for all India entrance examination for <b>RIMC, MILITARY SCHOOL, SAINIK SCHOOL and NDA & NAVAL ACADEMY.</b>This school always make consige effort for the students towards importance of joining Defense forces which teaches Loyality, Integrity and  uprightness.This gives enough opportunity to become an Officer in Defense Forces.</p>
+			<p class="animate">George Public School has expertise of George Education Institute at its disposal to prepare for all India entrance examination for <b>RIMC, MILITARY SCHOOL, SAINIK SCHOOL and NDA & NAVAL ACADEMY.</b>This school always make consige effort for the students towards importance of joining Defense forces which teaches Loyality, Integrity and  uprightness.This gives enough opportunity to become an Officer in Defense Forces.</p>
 		</div>
 	</div>
 </div>
+
+<button id="myBtn" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;"><i class="fas fa-arrow-up"></i></button>
+
 <div class="footer" style="background-color:#231d5e">
 	<div class="footerMap animate">
 		<div class="map-responsive">
@@ -126,6 +131,6 @@
 		
 	</div>
 </div>
-	<p id="copyRight" style="text-align: center; color: black;"><strong>©</strong>All Rights Reserved to <strong>Centre for Social Innovation</strong></p>
+	<p id="copyRight" style="text-align: center; color: black;"><strong>©</strong>All Rights Reserved to <strong>George Public School</strong></p>
 </body>
 </html>

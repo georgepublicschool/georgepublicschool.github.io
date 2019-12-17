@@ -71,6 +71,7 @@ body	{
 	overflow: hidden;
 	z-index: 1;
 	transition: 0.5s ease;
+	box-shadow: 0 6px 6px -6px rgba(8,26,38,0.75);
 }
 #navbarr a {
 	float: left;
@@ -164,7 +165,7 @@ body	{
 			display: block;
 		}
 		#navbarr {
-			background-color: #154360;
+			display: none;
 		}
 		#navbarr a {
 			color: white;
@@ -195,8 +196,9 @@ body	{
 	color: white;
 	cursor: pointer;
 	padding: 10px 15px;
-	border-radius: 5px;
-	font-size: 20px;
+	border-radius: 100%;
+	box-shadow: 0 0 10px #000000;
+	font-size: 30px;
 	transition: 0.5s ease
 }
 
@@ -219,6 +221,12 @@ body	{
 	from {transform: scale(0)} 
 	to {transform: scale(1)}
 }
+
+	@media screen and (max-width: 650px) {
+		#myBtn {
+			font-size: 20px;
+		}
+	}
 
 /************************************************	Slider		*********************************************************/
 #slider {

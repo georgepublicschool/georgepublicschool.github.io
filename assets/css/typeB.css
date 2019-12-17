@@ -25,6 +25,7 @@ body	{
 	position: fixed;
 	z-index: 1;
 	top: 0;
+	box-shadow: 0 6px 6px -6px rgba(8,26,38,0.75);
 }
 /*Left Column*/
 .headerLeftCol a {
@@ -147,11 +148,13 @@ body	{
 	z-index: 1;
 	border: none;
 	outline: none;
+	background-color: #154360;
 	color: white;
 	cursor: pointer;
 	padding: 10px 15px;
-	border-radius: 5px;
-	font-size: 20px;
+	border-radius: 100%;
+	box-shadow: 0 0 10px #000000;
+	font-size: 30px;
 	transition: 0.5s ease
 }
 
@@ -159,6 +162,12 @@ body	{
 	background-color:white;
 	color:#154360
 }
+
+	@media screen and (max-width: 650px) {
+		#myBtn {
+			font-size: 20px;
+		}
+	}
 
 .headr {
 	position: fixed;
@@ -208,7 +217,6 @@ body	{
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-size:cover;
-/*padding values :top, right, bottom, left*/
 	padding: 1vw;
 	margin-top: 105px;
 }
