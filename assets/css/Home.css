@@ -1,0 +1,688 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body	{
+	margin:0;
+	color:grey;
+}
+
+/***********************************************	Header		*********************************************************/
+*{box-sizing: border-box;}
+.header {
+	position: absolute;
+	width: 100%;
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	text-align: center;
+}
+.headerRightCol {
+	-ms-flex: 100%; /* IE10 */
+	flex: 100%;
+	padding: 0 7vw;
+}
+.headerB {
+	display: none;
+}
+
+.headerMenu	{
+	font-family:"Raleway",sans-serif;
+	position: relative;
+	width: 100%;
+	z-index:1;
+	display: block;
+	background-color: none;
+	top: 3.5vw;
+	padding: 0 2vw;
+	left: 3.5vw;
+}
+.headerMenu a {
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	width:16.66%;
+	color: black;
+	background-color: rgba(255,255,255,0.8);
+	padding: 1vw 0;
+}
+.active{
+	cursor: default;
+}
+.active, .headerMenu a:hover	{
+	background-color: rgba(255,255,255,0.9);
+	color: black;
+	overflow: hidden;
+	text-decoration: none;
+
+}
+
+#navbarr {
+	font-family:"Raleway",sans-serif;
+	background-color: white;
+	position: fixed;
+	top: -20vw;
+	width: 100%;
+	display:block;
+	transition: top 0.3s;
+	overflow: hidden;
+	z-index: 1;
+	transition: 0.5s ease;
+}
+#navbarr a {
+	float: left;
+	display: block;
+	color: grey;
+	text-align: center;
+	padding: 0;
+	width: 25%;
+	text-decoration: none;
+}
+#navbarr a:hover {
+	background-color: #f0f0ff;
+	color: black;
+}
+
+.abc a {
+	padding: 1.4vw 0 !important;
+}
+
+.smallScreenHeader	{
+	cursor: pointer;
+	padding: 10px;
+	background-color: #154360;
+	width: 100%;
+	color: white;
+	font-family: "Raleway", sans-serif;
+	margin: 0;
+	display: none;
+}
+#im{
+	padding: 5px;
+}
+.smallScreenHeader img	{
+	max-width: 8vw;
+	margin-bottom: -5px;
+	margin-right:20px;
+}
+
+.overlaMenu {
+	height: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	background-color: rgba(8,26,38, 0.98);
+	top: 0;
+	left: 0;
+	overflow-y: hidden;
+	transition: 0.5s;
+}
+
+.overlaMenu-content {
+	position: relative;
+	top: 1%;
+	width: 100%;
+	height: 90%;
+	text-align: left;
+	left: 0;
+	font-family: "Raleway", sans-serif;
+}
+
+.overlaMenu a {
+	font-weight: bold;
+	font-size: 125%;
+	height: 15%;
+	padding: 20% 0;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlaMenu a:hover, .overlaMenu a:focus {
+	color: #f1f1f1;
+}
+
+	@media screen and (max-width: 850px) {
+		.headerRightCol {
+			padding: 0 2vw 0 10vw;
+		}
+		.headerMenu	{
+			top: 20px;
+		}
+	}
+	@media screen and (max-width: 650px) {
+		.header {
+			display: none;
+		}
+		.smallScreenHeader	{
+			display: block;
+		}
+		#navbarr {
+			background-color: #154360;
+		}
+		#navbarr a {
+			color: white;
+			font-size: x-small;
+		}
+	}
+	@media screen and (max-height: 450px) {
+		.overlaMenu {
+			overflow-y: auto;
+		}
+		.overlaMenu a {
+			font-size: 20px
+		}
+		.smallScreenHeader	{
+			font-size: small;
+			overflow: hidden;
+		}
+	}
+
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 1;
+	border: none;
+	outline: none;
+	background-color: #154360;
+	color: white;
+	cursor: pointer;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-size: 20px;
+	transition: 0.5s ease
+}
+
+#myBtn:hover {
+	background-color:white;
+	color:#154360
+}
+
+.animate {
+	-webkit-animation: faisalsZoomButton 0.5s;
+	animation: faisalsZoomButton 0.5s
+}
+
+@-webkit-keyframes faisalsZoomButton {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+}
+
+@keyframes faisalsZoomButton {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+}
+
+/************************************************	Slider		*********************************************************/
+#slider {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: calc(48vw);
+	overflow: hidden;
+}
+
+#slider ul {
+	position: relative;
+	list-style: none;
+	height: calc(48vw);
+	width: 100000%;
+	padding: 0;
+	margin: 0;
+	transition: all 750ms ease;
+	left: 0;
+}
+#slider ul li {
+	position: relative;
+	height: calc(48vw);
+    width: calc(100vw);
+	float: left;
+}
+.slider_img {
+	height: auto;
+	width: 100%;
+}
+
+#prev, #next {
+	cursor: pointer;
+	width: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	font-size: 2rem;
+	text-shadow: 0 0 20px rgba(0,0,0,0.6);
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 150ms ease;
+}
+#prev:hover {
+	background-color: rgba(0,0,0,0.5);
+	text-shadow: 0;
+}
+#next:hover {
+	background-color: rgba(0,0,0,0.5);
+	text-shadow: 0;
+}
+#prev {
+	left: 10px;
+}
+#next {
+	right: 10px;
+}
+	@media screen and (max-width: 650px) {
+		#slider {
+			top: 2px;
+			width: 100%;
+			height: auto;
+		}
+		#prev, #next {
+			width: 20px;
+			line-height: 20px;
+			border-radius: 50%;
+			font-size: 1rem;
+			text-shadow: 0 0 20px rgba(0,0,0,0.6);
+			text-align: center;
+			color: #fff;
+			text-decoration: none;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: all 150ms ease;
+		}
+	}
+
+
+/***********************************************	Intro		*********************************************************/
+.intro {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	font-family:"Raleway",sans-serif;
+	background-color:#000000;
+	color:white;
+	font-size: 125%;
+	padding: 1.5vw;
+}
+.leftColumn{
+	-ms-flex:60%;
+	flex: 60%;
+	padding: 4%;
+}
+.card
+{
+	box-shadow:   0 0.4vw 0.8vw 0 rgba(0, 0, 0,0.2);
+	transition: 0.5s;
+	background-color: #e7e6ed;
+	color: #0a1029;
+	padding: 1.5vw;
+	-ms-flex: 20%; /* IE10 */
+	flex: 20%;	
+}
+
+.cont{
+	color:#0a1029;
+	background-color: #e7e6ed;
+	padding:0vw;
+	font-size: 20px;
+	overflow: hidden;
+	text-align:center;
+}
+
+#headd	{
+	font-family:"Tangerine",sans-serif;
+	font-weight: lighter;
+	font-size: 80px;
+	padding-bottom: 2vw;
+	text-align: center;
+}
+#eve{
+	font-family: "Tangerine",sans-serif;
+	font-weight: lighter;
+	font-size: 50px;
+	padding-bottom: 2vw;
+	text-align: center;
+}
+
+hr.underScore	{
+	border-color:#aaa;
+	border-width:2px;
+	border-radius: 1000px;
+	max-width: 400px;
+	margin-top: -20px;
+
+}
+	@media screen and (max-width: :1040){
+		.card{
+			background-color: #e7e6ed;
+			color: #0a1029;
+			padding: 4vw;
+			width: 100%;
+			margin:2vw;
+		}
+		.rightColumn{
+			-ms-flex: 100%; /* IE10 */
+			flex: 100%;
+			
+		}
+	}
+	
+	@media screen and (max-width: 650px) {
+		.intro 	{
+			padding: 10vw;
+			font-size: 100%;
+		}
+		#headd	{
+			font-size: 150%;
+		}
+		hr.underScore	{
+			border-width: 2px;
+			max-width: 100px;
+		}
+	}
+	@media screen and (max-width: 450px){
+		.intro{
+			padding: 8vw;
+			font-size: 100%;
+			overflow: hidden;
+		}
+		#headd	{
+			font-size: 200%;
+		}
+		#eve{
+		font-family: "Tangerine",sans-serif;
+		font-weight: lighter;
+		font-size: 150%;
+		padding-bottom: 2vw;
+		text-align: center;
+	}
+	.card{
+			background-color: #e7e6ed;
+			color: #0a1029;
+			padding: 4vw;
+			width: 100%;
+			margin:2vw;
+		}
+		.rightColumn{
+			-ms-flex: 100%; /* IE10 */
+			flex: 100%;
+			
+		}
+	}
+
+/********************************************	Headers		*********************************************************/
+.homeHead	{
+	font-family:"Raleway",sans-serif;
+	text-align:center;
+	color:white;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+/*padding values :top, right, bottom, left*/
+	padding: 4vw 5vw 5vw;
+}
+
+.homeHead h1	{
+	font-family:"Tangerine",sans-serif;
+	font-weight: lighter;
+	font-size: 100px;
+}
+	@media screen and (max-width: 650px) {
+		.homeHead	{
+			padding: 5vw;
+		}
+		.homeHead h1	{
+			margin-top: 0;
+			font-size: 50px;
+			padding: 15vw;
+		}
+	}
+
+	@media screen and (max-width: 450px) {
+		.homeHead	{
+			padding: 0;
+		}
+	}
+
+/*******************************************	Head-Content	*******************************************************/
+.homeContent	{
+	color: grey;
+	text-align: justify;
+	background-color:#f0f0ff;
+	padding:5vw;
+	font-size: 25px;
+	overflow: hidden;
+}
+#Btn{
+	padding:10px;
+	background-color: #3b4b54;
+	color: #fff;
+	border-radius: 12px;
+	font-size: 110%;
+	margin-bottom: 10px;
+}
+#Btn:hover{
+	background-color: #fff;
+	color: #3b4b54;
+}
+.homeContent h2	{
+	font-size: 45px;
+}
+.homeContent h3	{
+	font-size: 35px;
+	text-align: center;
+}
+.homeContent h4	{
+	font-size: 35px;
+}
+	@media screen and (max-width: 650px) {
+		.homeContent	{
+			background-color:#f0f0ff;
+			padding:5vw 10vw;
+			font-size: 100%;
+		}
+		.homeContent h2	{
+			font-size: 150%;
+		}
+		.homeContent h3	{
+			font-size: 125%;
+		}
+		.homeContent h4	{
+			font-size: 125%;
+		}
+	}
+
+/***************************************	Team Members		*****************************************************/
+.galleryContent{
+	color:grey;
+	background-color: #f0f0ff;
+	height: auto;
+}
+.rowTeam	{
+	overflow: hidden;
+	display: flex;
+	flex-wrap: wrap;
+}
+.columnTeam {
+	flex: 30%;
+}
+.columnTeam img{
+
+	width: 320px;
+	height: 320px;
+	margin:20px;
+	padding: 20px;
+    border: 8px solid grey;
+	
+}
+@media screen and (max-width: 1200px){
+	.columnTeam img{
+		width: 200px;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.columnTeam {
+	width: 100%;
+	margin: 5px;
+	display: block;
+	padding: 10px;
+}
+	.columnTeam img {
+	margin: 5px 20px;
+	vertical-align: middle;
+	width:350px;
+	height: 350px;
+	padding: 10px;
+	border: 2px;
+	border-color: #777;
+	border-radius: 2px;
+}
+#moreButton{
+	margin-bottom: -10px;
+	margin-right: 20%;
+}
+}
+@media screen and (max-width: 450px){
+	.columnTeam img{
+		width: 200px;
+		height:200px;
+	}
+	.containerTeam{
+		padding: 10px;
+	}
+	#moreButton{
+		margin-bottom: -10px;
+		margin-right: 20%;
+	}
+}
+
+/**************************************overlaMenuTeam effect*****************************************************************/
+
+
+.overlaMenuTeam {
+	position: absolute;
+	top: 5px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 95%;
+	width: 100%;
+	opacity: 0;
+	transition: 1s ease;
+	background-color: rgba(0,55,73,0.8);
+	cursor:pointer;
+}
+
+.containerTeam:hover .overlaMenuTeam {
+	opacity: 1;
+	height: 101%;
+}
+
+
+	@media screen and (max-width: 650px) {
+		.columnTeam 	{
+			width: 100%;
+		}
+		.textTeam	{
+			font-size: 150%;
+		}
+	}
+
+.headr {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+.progress-containr {
+	width: 100%;
+	height: 5px;
+	background: #ccc;
+}
+
+.progress-br {
+	height: 5px;
+	background: #0f0faa;
+	width: 0%;
+}
+
+/***************************************		MAP			*****************************************************/
+.map-responsive	{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height: 0;
+}
+.map-responsive iframe	{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+
+/***************************************		Contact			*****************************************************/
+.container2 {
+	color: grey;
+}
+
+.column2 {
+	float: left;
+	width: 50%;
+	margin-top: 0.6vw;
+	padding: 0 2vw;
+}
+
+.contactt	{
+	 padding: 0 5vw;
+	 font-size: 90%;
+}
+
+.row2:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#copyRight	{
+	font-size: small;
+	margin: 0;
+	color: black;
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+	.column2, input[type=submit] {
+		width: 100%;
+		margin-top: 0;
+	}
+	.contactt	{
+		padding: 0;
+	}
+	#fullName	{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#copyRight	{
+		font-size: xx-small;
+	}
+}
+
