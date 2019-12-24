@@ -1,49 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154734756-2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-154734756-2');
-	</script>
-
-	<meta charset="utf-8">
-	<meta name="author" content="Shubhangi Goyal,Faisal Akhtar">
-	<meta name="keywords" content="George Public School, Dehradoon, Dehradun, School, Uttarakhand,George,Nimbuwala,Garhi Cantt">
-	<meta content="yes" name="apple-mobile-web-app-capable">
-	<meta content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" name="viewport">
-
-	<meta name="title" content="George Public School">
-	<meta name="description" content="Welcome to George Public School ~ The school with a difference. Located in Uttarakhand Vidhayli Shiksha Parishad, NimbuWala, Garhi Cantt is a  Co-Educational Secondary School institution affilated to the Central Board of Secondary Education (CBSE) on Provisional basis since 2006. ">
-
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://georgepublicschool.github.io/">
-	<meta property="og:site_name" content="George Public School">
-	<meta property="og:title" content="George Public School">
-	<meta property="og:description" content="Welcome to George Public School ~ The school with a difference">
-	<meta property="og:type" content="website">
-	<meta property="og:image" itemprop="image" content="https://georgepublicschool.github.io/assets/img/og.jpg">
-	<meta property="og:site_name" content="George Public School">
-
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:url" content="https://georgepublicschool.github.io/">
-	<meta name="twitter:site_name" content="George Public School">
-	<meta name="twitter:title" content="George Public School">
-	<meta name="twitter:description" content="Welcome to George Public School ~ The school with a difference">
-	<meta name="twitter:type" content="website">
-	<meta name="twitter:image" itemprop="image" content="https://georgepublicschool.github.io/assets/img/og.jpg">
-	<meta name="twitter:image:alt" content="George Public School">
-
-	<title>WELCOME TO GEORGE PUBLIC SCHOOL</title>
-	<link rel="stylesheet" href="assets/css/main.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="WELCOME TO GEORGE PUBLIC SCHOOL ~The School with a difference">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Faisal Akhtar, SHUBHANGI GOYAL">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WELCOME TO GEORGE PUBLIC SCHOOL ~The School with a difference</title>
+	<link rel="stylesheet" href="src/css/Home.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-	<link rel="icon" href="assets/img/logo.jpg">
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Raleway">
+	<link rel="icon" href="src/img/logo.jpg">
+	<script src="src/js/jquery.min.js"></script>
+	<script src="src/js/bootstrap.min.js"></script>
+	<script src="src/js/smoothScroll.js"></script>
 </head>
 
 
@@ -51,12 +21,12 @@
 <div id="top" class="header">
 	<div class="headerRightCol">
 		<div class="headerMenu">
-		<img src="assets/img/logo.jpg" style="max-width:8vw; float: left;padding-right: 2vw">
-			<a class="active animate">Home</a>
-			<a class="animate" href="about.html">About</a>
-			<a class="animate" href="#inf">Insfrastructure</a>
-			<a class="animate" href="#Gall">Gallery</a>
-			<a class="animate" href="#Contac">Contact</a>
+		<img src="src/img/logo.jpg" style="max-width:8vw; float: left;padding-right: 2vw">
+			<a class="active">Home</a>
+			<a href="About.html">About</a>
+			<a href="#inf">Insfrastructure</a>
+			<a href="#Gall">Gallery</a>
+			<a href="#Contac">Contact</a>
 		</div>
 	</div>
 </div>
@@ -93,96 +63,103 @@
 </div>
 
 <div id="myNav" class="overlaMenu">
-<div class="smallScreenHeader"><span style="float:right" onclick="closeNav()">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
+<div class="smallScreenHeader"><span style="float:right" onclick="closeNav()">&#9776; Menu</span> <img src="src/img/logo.jpg"> George Public School</div>
 	<div class="overlaMenu-content">
-		<a href="about.html" onclick="closeNav()">About</a>
-		<a href="#inf" onclick="closeNav()">Infrastructure</a>
-		<a href="#Gall" onclick="closeNav()">Gallery</a>
-		<a href="#Contac" onclick="closeNav()">Contact</a>
+		<a href="About.html">About</a>
+		<a href="#inf">Infrastructure</a>
+		<a href="#Gall">Gallery</a>
+		<a href="#Contac">Contact</a>
 	</div>
 </div>
-<div class="smallScreenHeader"><span style="float:right" onclick="openNav()" class="animate">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
+<div class="smallScreenHeader"><span style="float:right" onclick="openNav()">&#9776; Menu</span> <img src="src/img/logo.jpg"> George Public School</div>
 <script>
 	function openNav()	{	document.getElementById("myNav").style.height = "100%"; document.getElementsByTagName('body')[0].style.overflowY = "hidden";	}
 	function closeNav()	{	document.getElementById("myNav").style.height = "0%"; document.getElementsByTagName('body')[0].style.overflowY = "initial";	}
 </script>
 
-<div id="slider" class="animate">
+<div id="slider">
 	<ul id="slideWrap">
-		<li><img src="assets/img/img1.jpg" class="slider_img"></li>
-		<li><img src="assets/img/img2.jpg" class="slider_img"></li>
-		<li><img src="assets/img/School.jpg" class="slider_img"></li>
-		<li><img src="assets/img/img6.jpg" class="slider_img"></li>
+		<li><img src="src/img/img1.jpg" class="slider_img"></li>
+		<li><img src="src/img/img2.jpg" class="slider_img"></li>
+		<li><img src="src/img/School.jpg" class="slider_img"></li>
+		<li><img src="src/img/img6.jpg" class="slider_img"></li>
 	</ul>
 </div>
-<script src="assets/js/sliderJS.js"></script>
+<script src="src/js/sliderJS.js"></script>
 
-<button id="myBtn" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;"><i class="fas fa-arrow-up"></i></button>
+<button id="myBtn" onclick="topFunction()">HOME</button>
+<script type="text/javascript">
+	function topFunction() {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>
 <!-------------------------------------------------------------------------------------------------------------------->
 <div class="intro" id="soc" style="background-color:#0a1029;">
 	
 	<div class="leftColumn">
-		<h1 class="animate" id="headd">About GPS</h1>
+		<h1 id="headd">About GPS</h1>
 		<hr class="underScore">
 		<div class="homeContent">
-			<img src="assets/img/img4.jpg" class="animate" style="height: 100%; width: 100%;">
-			<p style="text-align:justify;" class="animate"><strong>George Public School</strong> located in Uttarakhand Vidhayli Shiksha Parishad, NimbuWala, Garhi Cantt is a  Co-Educational Secondary School institution affilated to the Central Board of Secondary Education (CBSE) on Provisional basis since 2006.</p>
-			<p class="animate">The School has been operating officially under the trust/Society. George Public School Shiksha Samiti.</p>
+		<img src="src/img/img4.jpg" class="animate" style="height: 100%; width: 100%;">
+		<p style="text-align:justify;"><strong>George Public School</strong> located in Uttarakhand Vidhayli Shiksha Parishad, NimbuWala, Garhi Cantt is a  Co-Educational Secondary School institution affilated to the Central Board of Secondary Education (CBSE) on Provisional basis since 2006.</p>
+		<p>The School has been operating officially under the trust/Society. George Public School Shiksha Samiti.</p>
 		</div>
 	</div>
 	<div class="card">
-	<div class="rightColumn animate">
-		<h1 id="eve">Upcoming Events</h1>
-		<hr class="underScore">
-		<div class="cont">
-		<p>No Upcoming Events</p>
+		<div class="rightColumn">
+			<h1 id="eve">Upcoming Events</h1>
+			<hr class="underScore">
+			<div class="cont">
+			<p>No Upcoming Events</p>
+			</div>
 		</div>
 	</div>
 </div>
 </div>
 <!-------------------------------------------------------------------------------------------------------------------->
 <div id="inf" class="homeHead" style="background-color:#1a455e;">
-	<h1 class="animate">Infrastructure</h1>
+	<h1>Infrastructure</h1>
 	<hr class="underScore">
 		<div class="homeContent">
-			<img src="assets/img/School.jpg" class="animate" style="width: 100%; height: 100%;">
-			<p class="animate">&emsp;George Public School  is equipped with 19 rooms, labs to conduct practicals in Physics, Chemistry, Computer Science. All the labs are set up with latest technology and have all necessary equipment and requirements. The labs are spacious and have proper sitting arrangements.</p>
+			<img src="src/img/School.jpg" class="animate" style="width: 100%; height: 100%;">
+			<p>&emsp;George Public School  is equipped with 19 rooms, labs to conduct practicals in Physics, Chemistry, Computer Science. All the labs are set up with latest technology and have all necessary equipment and requirements. The labs are spacious and have proper sitting arrangements.</p>
 
-			<p class="animate">&emsp;We are heading towards smart learning techniques. All classes are having  SMART BOARDS to help students learn more.We have separate SPORTS GROUND to conduct various sports activities and a BASKETBALL court inside the Campus. BUS Facility is also provided to the students.</p>
+			<p>&emsp;We are heading towards smart learning techniques. All classes are having  SMART BOARDS to help students learn more.We have separate SPORTS GROUND to conduct various sports activities and a BASKETBALL court inside the Campus. BUS Facility is also provided to the students.</p>
 		</div>
 	</div>
 </div>
 
 <!-------------------------------------------------------------------------------------------------------------------->
 <div id="Gall" class="homeHead" style="background-color:#3b4b54">
-	<h1 class="animate">Gallery</h1>
+	<h1>Gallery</h1>
 	<hr class="underScore">
 	<div class="galleryContent">
 		<div class="rowTeam">
 			<div class="columnTeam">
-				<div class="containerTeam animate">
-					<img src="assets/img/img2.jpg" alt="SCHOOL">
-				</div>
+					<img src="src/img/img2.jpg" alt="SCHOOL">
+				
 			</div>
 
 			<div class="columnTeam">
-				<div class="containerTeam animate">
-					<img src="assets/img/img3.jpg" alt="SCHOOL">
-				</div>
+				
+					<img src="src/img/img3.jpg" alt="SCHOOL">
+			
 			</div>
 
 			<div class="columnTeam">
-				<div class="containerTeam animate">
-					<img src="assets/img/img4.jpg" alt="School">
-				</div>
+			
+					<img src="src/img/img4.jpg" alt="School">
+				
 			</div>
 		</div>
+		<a href="Gallery.html" target="_blank"><button id="Btn">MORE</button></a>
 	</div>
 </div>
 
 <!-------------------------------------------------------------------------------------------------------------------->
 <div id="Contac" class="homeHead" style="background-color: #0d101f">
-	<h1 class="animate">Contact Us</h1>
+	<h1>Contact Us</h1>
 	<hr class="underScore">
 	<div class="homeContent">
 		<div class="container2">
@@ -192,9 +169,9 @@
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.979099785575!2d78.01510691446842!3d30.351543881771594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3908d5fd05bf0365%3A0x5ba048125a62beb7!2sGeorge%20Public%20School!5e0!3m2!1sen!2sin!4v1576401056171!5m2!1sen!2sin" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> 
 					</div>
 				</div>
-				<div class="column2 contactt animate">
+				<div class="column2 contactt">
 					<p><strong><i class="fa fa-phone"></i> CALL US</strong></p>
-					<p style="padding-left: 30px;">Phone-Number:<br><a href="tel:0135-2750750" style="text-decoration: none; "> 0135-2750750</a><br><a href="tel:0135-2750759" style="text-decoration: none;"> 0135-2750759</a></p>
+					<p style="padding-left: 30px;">Phone-Number:<br><a href="tel:0135-2750750" style="text-decoration: none; "> 0135-2750750</a><br><a href="tel:0135-2750791" style="text-decoration: none;"> 0135-2750791</a></p>
 
 					<p><i class="fa fa-location-arrow"></i> <strong>HERE WE ARE</strong></p>
 					<p style="padding-left: 30px"><a href="https://www.google.co.in/maps/place/George+Public+School/@30.3515439,78.0151069,17z/data=!3m1!4b1!4m5!3m4!1s0x3908d5fd05bf0365:0x5ba048125a62beb7!8m2!3d30.3515439!4d78.0172956?hl=en" target="_blank" style="text-decoration: none;">George Public School<br>Nimbuwala,Garhi Cantt<br>Dehradun<br></a></p>
