@@ -464,13 +464,16 @@ hr.underScore	{
 	overflow: hidden;
 }
 #Btn{
-	padding:15px;
-	
+	padding:10px;
 	background-color: #3b4b54;
 	color: #fff;
-	border-radius: 8px;
+	border-radius: 12px;
 	font-size: 110%;
 	margin-bottom: 10px;
+}
+#Btn:hover{
+	background-color: #fff;
+	color: #3b4b54;
 }
 .homeContent h2	{
 	font-size: 45px;
