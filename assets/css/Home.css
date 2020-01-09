@@ -327,6 +327,7 @@ body	{
 	padding: 1.5vw;
 	-ms-flex: 20%; /* IE10 */
 	flex: 20%;	
+	display:none;
 }
 
 .cont{
