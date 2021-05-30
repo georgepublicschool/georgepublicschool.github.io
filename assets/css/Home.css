@@ -145,6 +145,7 @@ body	{
 	font-family: "Raleway", sans-serif;
 	margin: 0;
 	display: none;
+	line-height: 22px;
 }
 #im{
 	padding: 5px;
@@ -166,6 +167,7 @@ body	{
 }
 
 .overlaMenu-content {
+	display: none;
 	position: absolute;
 	width: 100%;
 	top: calc(22px + 20px);
@@ -188,11 +190,6 @@ body	{
 	cursor: pointer;
 }
 
-/* .overlaMenu .overlaMenu-content a:hover,
-.overlaMenu .SabseBadiWaliClass:hover {
-	background-color: #154360;
-} */
-
 .overlaMenu .SabseBadiWaliClass .DikhaweKaBtn {
 	display: flex;
 }
@@ -204,7 +201,6 @@ body	{
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
 	border-top: 6px solid #fff;
-
 	transform: translateY(6px);
 	margin-left: 5px;
 }
@@ -244,7 +240,8 @@ body	{
 		.header {
 			display: none;
 		}
-		.smallScreenHeader	{
+		.smallScreenHeader,
+		.overlaMenu-content	{
 			display: block;
 		}
 		#navbarr {
