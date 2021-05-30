@@ -109,19 +109,27 @@
 </div>
 
 <div id="myNav" class="overlaMenu">
-<div class="smallScreenHeader"><span style="float:right" onclick="closeNav()">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
-	<div class="overlaMenu-content">
+<div class="smallScreenHeader">
+	<span style="float:right" onclick="document.querySelector('.overlaMenu-content').classList.toggle('hidden');">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
+	<div class="overlaMenu-content hidden">
+        <a href="about.html">Home</a>
 		<a href="about.html">About</a>
 		<a href="#inf">Infrastructure</a>
+        <div class="SabseBadiWaliClass" onclick="this.classList.toggle('opened')">
+            <div class="DikhaweKaBtn">Dropdown
+                <span class="BorderKaArrow"></span>
+            </div>
+            <div class="YahichToAsliListHai">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
 		<a href="#Gall">Gallery</a>
 		<a href="#Contac">Contact</a>
 	</div>
 </div>
-<div class="smallScreenHeader"><span style="float:right" onclick="openNav()">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
-<script>
-	function openNav()	{	document.getElementById("myNav").style.height = "100%"; document.getElementsByTagName('body')[0].style.overflowY = "hidden";	}
-	function closeNav()	{	document.getElementById("myNav").style.height = "0%"; document.getElementsByTagName('body')[0].style.overflowY = "initial";	}
-</script>
+<div class="smallScreenHeader"><span style="float:right" onclick="document.querySelector('.overlaMenu-content').classList.toggle('hidden')">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
 
 <div id="slider">
 	<ul id="slideWrap">
