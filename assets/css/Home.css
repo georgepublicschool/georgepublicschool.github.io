@@ -27,35 +27,78 @@ body	{
 	display: none;
 }
 
-.headerMenu	{
-	font-family:"Raleway",sans-serif;
+.headerMenu {
+	font-family: "Raleway", sans-serif;
 	position: relative;
 	width: 100%;
-	z-index:1;
+	z-index: 1;
 	display: block;
-	background-color: none;
+	background-color: transparent;
 	top: 3.5vw;
 	padding: 0 2vw;
 	left: 3.5vw;
+	overflow: hidden;
 }
-.headerMenu a {
+.headerMenu .logo {
+	width: 7.5vw;
+	float: left;
+	height: calc(19px + 2vw);
+}
+.headerMenu .logo img {
+	display: block;
+	height: 100%;
+}
+.headerMenu a,
+.SabseBadiWaliClass {
 	float: left;
 	text-align: center;
 	text-decoration: none;
-	width:16.66%;
+	width: calc((100% - 7.5vw)/6);
 	color: black;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255, 255, 255, 0.8);
 	padding: 1vw 0;
+	overflow: hidden;
+}
+.SabseBadiWaliClass .DikhaweKaBtn {
+	display: flex;
+	justify-content: center;
+}
+.YahichToAsliListHai {
+	display: none;
+	overflow: hidden;
+}
+.YahichToAsliListHai a {
+	display: block;
+	float: none;
+	width: auto;
+}
+.SabseBadiWaliClass:hover {
+	padding-bottom: 0;
+}
+.SabseBadiWaliClass:hover .YahichToAsliListHai {
+	display: block;
+	margin-top: 1vw;
+}
+.BorderKaArrow {
+	height: 0;
+	width: 0;
+	opacity: 0.66;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #000;
+
+	transform: translateY(5px);
+	margin-left: 5px;
 }
 .active{
 	cursor: default;
 }
-.active, .headerMenu a:hover	{
+.active, .headerMenu a:hover, .SabseBadiWaliClass:hover	{
 	background-color: rgba(255,255,255,0.9);
 	color: black;
 	overflow: hidden;
 	text-decoration: none;
-
+	cursor: pointer;
 }
 
 #navbarr {
@@ -367,7 +410,7 @@ hr.underScore	{
 	margin-top: -20px;
 
 }
-	@media screen and (max-width: :1040){
+	@media screen and (max-width: 1040px){
 		.card{
 			background-color: #e7e6ed;
 			color: #0a1029;
