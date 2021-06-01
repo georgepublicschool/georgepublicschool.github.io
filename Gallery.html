@@ -90,20 +90,49 @@
 		}
 	</script>
 
-<div id="myNav" class="overlaMenu" style="background-color:#1a455e">
-<div class="smallScreenHeader" style="background-color: #1a455e"><span style="float:right" onclick="closeNav()">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
-	<div class="overlaMenu-content">
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
-		<a href="index.html#inf">Infrastructure</a>
+<div id="myNav" class="overlaMenu">
+<div class="smallScreenHeader">
+	<span style="float:right" onclick="document.querySelector('.overlaMenu-content').classList.toggle('hidden');">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
+	<div class="overlaMenu-content hidden">
+         <div class="SabseBadiWaliClass" onclick="this.classList.toggle('opened')">
+            <div class="DikhaweKaBtn">Home
+                <span class="BorderKaArrow"></span>
+            </div>
+            <div class="YahichToAsliListHai">
+                <a href="about.html">About Us</a>
+				<a href="management.html">School Managing Committee</a>
+				<a href="affilation.html">Affilation</a>
+				<a href="noc.html">N.O.C</a>
+				<a href="rte.html">RTE</a>
+				<a href="soc.html">Society Registration</a>
+				<a href="fire.html">Fire Certificate</a>
+            </div>
+        </div>
+		<div class="SabseBadiWaliClass" onclick="this.classList.toggle('opened')">
+            <div class="DikhaweKaBtn">Admission
+                <span class="BorderKaArrow"></span>
+            </div>
+            <div class="YahichToAsliListHai">
+                <a href="fee.html">Fee Structure</a>
+				<a href="book.html">Book List</a>
+            </div>
+        </div>
+		
+        <div class="SabseBadiWaliClass" onclick="this.classList.toggle('opened')">
+            <div class="DikhaweKaBtn">Academics
+                <span class="BorderKaArrow"></span>
+            </div>
+            <div class="YahichToAsliListHai">
+                <a href="calender.html">Academic Calender</a>
+				<a href="holidays.html">Holidays</a>
+            </div>
+        </div>
+        <a href="index.html#inf">Infrastructure</a>
+		<a href="index.html#Gall">Gallery</a>
 		<a href="index.html#Contac">Contact</a>
 	</div>
 </div>
-<div class="smallScreenHeader" style="background-color:#1a455e"><span style="float:right" onclick="openNav()">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
-<script>
-	function openNav()	{	document.getElementById("myNav").style.height = "100%"; document.getElementsByTagName('body')[0].style.overflowY = "hidden";	}
-	function closeNav()	{	document.getElementById("myNav").style.height = "0%"; document.getElementsByTagName('body')[0].style.overflowY = "initial";	}
-</script>
+<div class="smallScreenHeader"><span style="float:right" onclick="document.querySelector('.overlaMenu-content').classList.toggle('hidden')">&#9776; Menu</span> <img src="assets/img/logo.jpg"> George Public School</div>
 <!-------------------------------------------------------------------------------------------------------------------->
 <div class="gallHead" id="gall"><p>Gallery</p></div>
 
