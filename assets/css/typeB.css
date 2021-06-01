@@ -44,6 +44,7 @@ body	{
 	z-index:1;
 	display: block;
 	top: 3vw;
+
 }
 .headerMenu a {
 	float: left;
@@ -207,7 +208,7 @@ body	{
 	background-attachment:fixed;
 	background-size:cover;
 /*padding values :top, right, bottom, left*/
-	padding: 1vw;
+	padding: 0.5vw;
 	margin-top: 105px;
 }
 	@media screen and (max-width: 700px) {
@@ -284,7 +285,27 @@ body	{
 .aboutContent img {
 	padding: 0 10%;
 }
-
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.table-content{
+	padding: 5vw 4vw;
+	font-size: 20px;
+	font-family: "sans-serif";
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,td{
+	color: black;
+	padding: 1vw 4vw;
+}
+.download_doc{
+	text-align: center;
+	padding: 100px;
+}
 /* Clear floats after the columns */
 .row:after {
 	content: "";
