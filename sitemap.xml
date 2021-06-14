@@ -9,17 +9,172 @@
 
 <url>
   <loc>https://georgepublicschool.com/</loc>
-  <lastmod>2019-12-24T04:47:30+00:00</lastmod>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://georgepublicschool.com/about.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/management.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/affilation.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/noc.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/rte.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/soc.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/fire.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/deo.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/parents.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/fee.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/book.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/calender.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/holidays.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/class.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/building.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/health.html</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://georgepublicschool.com/Gallery.html</loc>
-  <lastmod>2019-12-24T04:47:30+00:00</lastmod>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://georgepublicschool.com/index.html</loc>
-  <lastmod>2019-12-24T04:47:30+00:00</lastmod>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/management.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/Affilation.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/NOC_State.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/rte.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/soc.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/Fire_Certificate.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/deo.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/Parents.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/Fee_Structure.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/Book_List.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/Academic_Calender.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/holidays.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/Class.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/Building_Safety.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://georgepublicschool.com/assets/Health.pdf</loc>
+  <lastmod>2021-06-12T04:40:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
