@@ -21,7 +21,7 @@ body	{
 .headerRightCol {
 	-ms-flex: 100%; /* IE10 */
 	flex: 100%;
-	padding: 0 7vw;
+	padding: 0 10vw;
 }
 .headerB {
 	display: none;
@@ -36,7 +36,6 @@ body	{
 	background-color: transparent;
 	top: 3.5vw;
 	padding: 0 2vw;
-	left: 3.5vw;
 	overflow: hidden;
 }
 .headerMenu .logo {
