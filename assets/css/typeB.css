@@ -36,7 +36,16 @@ body	{
 	flex: 70%;
 	padding: 0 5vw 0 30vw;
 }
-
+.d-flex{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+.d-flex img{
+	width:50%;
+}
 .headerMenu	{
 	font-family:"Raleway",sans-serif;
 	position: relative;
