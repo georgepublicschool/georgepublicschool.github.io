@@ -15,6 +15,11 @@ body	{
 	display:flex;
 	flex-wrap:wrap;
 	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
+.d-flex img{
+	width:50%;
 }
 .header {
 	position: absolute;
