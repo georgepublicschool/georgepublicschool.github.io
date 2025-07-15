@@ -11,6 +11,11 @@ body	{
 
 /***********************************************	Header		*********************************************************/
 *{box-sizing: border-box;}
+.d-flex{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+}
 .header {
 	position: absolute;
 	width: 100%;
